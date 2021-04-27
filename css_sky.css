@@ -1,0 +1,37 @@
+.music { 
+    color:#A6A6A6; 
+    text-decoration:none; 
+}
+.music_table {
+    width: 1000px;
+    height: 150px;
+    margin: auto;
+    background: #161616;
+}
+@font-face {
+    src : url("Lovelyn Free Personal Use.otf");
+    font-family: "jua"
+}
+.font_1 {
+    font-family: "jua";
+    font-size: 50px;
+    color:#f0ab8d;
+}
+.button {
+    background-color:skyblue;
+}
+.login {
+    background-color:#262626;
+    color:#ffffff;
+}
+.main {
+    width: 1000px;
+    
+    background-image: url('img_sky/main_back.jpg');
+    padding: 0px;
+    margin: auto;
+}
+body {
+    background-color:#262626;
+    padding: 50px;
+}
