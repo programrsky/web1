@@ -31,7 +31,21 @@
     padding: 0px;
     margin: auto;
 }
+.banner {
+    color:#f0ab8d; 
+    text-decoration:none; 
+}
+.list_banner {
+    color:#f0ab8d; 
+    text-decoration:none; 
+}
 body {
     background-color:#262626;
     padding: auto;
 }
+
+.floating { background-color:#262626; opacity: 0.5; border:2px solid #262626; position: fixed; right : 43%; top: 250px; margin-right: -615px; text-align:center; width:200px; }
+.floating div:nth-child(2){ border:2px solid #A6A6A6; border-radius: 8px; }
+.floating div:nth-child(3){ border:2px solid #A6A6A6; border-radius: 8px; }
+.floating div:nth-child(4){ border:2px solid #A6A6A6; border-radius: 8px; }
+.floating div:nth-child(5){ border:2px solid #A6A6A6; border-radius: 8px; }
