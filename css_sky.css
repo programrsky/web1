@@ -16,6 +16,10 @@
     src : url("Lovelyn Free Personal Use.otf");
     font-family: "jua"
 }
+@font-face {
+    src : url("SDMiSaeng.ttf");
+    font-family: "sdm"
+}
 .font_1 {
     font-family: "jua";
     font-size: 50px;
@@ -73,4 +77,20 @@ body {
     height: 100px;
     text-align: center;
     background-color:#383838;
+}
+.bottom_row {
+    height: 1px;
+    background-color:#181818;
+}
+.music_list {
+    color: #f0ab8d;
+    font-family: "sdm";
+    font-size: 100px;
+    opacity : 1;
+}
+.music_list_outside {
+    width: 1000px;
+    margin-bottom: 70px;
+    background: url('img_sky/img.jpg') no-repeat;
+    opacity : 0.2;
 }
