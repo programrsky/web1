@@ -86,11 +86,12 @@ body {
     color: #f0ab8d;
     font-family: "sdm";
     font-size: 100px;
-    opacity : 1;
 }
 .music_list_outside {
     width: 1000px;
     margin-bottom: 70px;
-    background: url('img_sky/img.jpg') no-repeat;
-    opacity : 0.2;
+    background: url('img_sky/img.jpg');
+}
+.music_opacity {
+    opacity: 0.5;
 }
