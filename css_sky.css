@@ -1,3 +1,7 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 .music { 
     color:#A6A6A6; 
     text-decoration:none; 
@@ -17,6 +21,12 @@
     font-size: 50px;
     color:#f0ab8d;
 }
+.table {
+    margin: 20px;
+    margin-left: 40px;
+    margin-right: 0px;
+    color: #ffffff;
+}
 .button {
     background-color:skyblue;
 }
@@ -26,10 +36,11 @@
 }
 .main {
     width: 1000px;
-    
     background-image: url('img_sky/main_back.jpg');
     padding: 0px;
     margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .banner {
     color:#f0ab8d; 
@@ -51,3 +62,10 @@ body {
 .floating div:nth-child(5){ border:2px solid #A6A6A6; border-radius: 8px; }
 .floating div:nth-child(6){ border:2px solid #A6A6A6; border-radius: 8px; }
 .floating div:nth-child(7){ border:2px solid #A6A6A6; border-radius: 8px; }
+
+.bottom {
+    padding: 0px;
+    margin: 0px;
+    background-color:skyblue;
+
+}
