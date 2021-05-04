@@ -70,8 +70,22 @@ body {
 .floating div:nth-child(7){ border:2px solid #A6A6A6; border-radius: 8px; padding: 3px;}
 .floating div:nth-child(8){ border:2px solid #A6A6A6; border-radius: 8px; padding: 3px;}
 
-.floating_Advertising_Right {background-image: url('img_sky/아이유.png'); background-size: cover; border:2px solid #262626; position: fixed; right : 43%; top: 200px; margin-right: -615px; text-align:center; width:200px; height: 500px;}
-.floating_Advertising_left {background-image: url('img_sky/제니.png'); background-size: cover; border:2px solid #262626; position: fixed; left: 0%; top: 200px; margin-right: -615px; text-align:center; width:200px; height: 500px;}
+.floating_main_1 {border:none; position: fixed; right : 50%; top: 100px; margin-right: -615px; text-align:center; width:70px; }
+.floating_main_1 div:nth-child(2){ border:2px; border-radius: 8px; padding: 3px;}
+.floating_main_1 div:nth-child(3){ border:2px; border-radius: 8px; padding: 3px;}
+.floating_main_1 div:nth-child(4){ border:2px; border-radius: 8px; padding: 3px;}
+.floating_main_1 div:nth-child(5){ border:2px; border-radius: 8px; padding: 3px;}
+.floating_main_1 div:nth-child(6){ border:2px; border-radius: 8px; padding: 3px;}
+.floating_main_1 div:nth-child(7){ border:2px; border-radius: 8px; padding: 3px;}
+.floating_main_1 div:nth-child(8){ border:2px; border-radius: 8px; padding: 3px;}
+.floating_main_2 {border:none; position: fixed; right : 45%; top: 100px; margin-right: -615px; text-align:center; width:70px; }
+.floating_main_2 div:nth-child(2){ border:2px; border-radius: 8px; padding: 3px;}
+.floating_main_2 div:nth-child(3){ border:2px; border-radius: 8px; padding: 3px;}
+.floating_main_2 div:nth-child(4){ border:2px; border-radius: 8px; padding: 3px;}
+.floating_main_2 div:nth-child(5){ border:2px; border-radius: 8px; padding: 3px;}
+.floating_main_2 div:nth-child(6){ border:2px; border-radius: 8px; padding: 3px;}
+.floating_main_2 div:nth-child(7){ border:2px; border-radius: 8px; padding: 3px;}
+.floating_main_2 div:nth-child(8){ border:2px; border-radius: 8px; padding: 3px;}
 
 .bottom_1 {
     margin-top: 70px;
@@ -96,6 +110,7 @@ body {
 }
 .music_list_outside {
     width: 1000px;
+    padding-bottom: 20px;
 }
 
 /*목록*/
