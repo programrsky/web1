@@ -88,20 +88,38 @@ body {
 .floating_main_2 div:nth-child(7){ border:2px; border-radius: 8px; padding: 3px;}
 .floating_main_2 div:nth-child(8){ border:2px; border-radius: 8px; padding: 3px;}
 
+
 .bottom_1 {
-    margin-top: 70px;
-    height: 50px;
     text-align: center;
-    background-color:#737373;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color:#3a3a3a;
 }
 .bottom_2 {
-    height: 100px;
     text-align: center;
-    background-color:#383838;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color:#3a3a3a;
+}
+.bottom_font {
+    color:rgb(167, 167, 167);
+}
+.bottom_font_li {
+    color:#f0ab8d;
+    text-decoration: none;
 }
 .bottom_row {
     height: 1px;
-    background-color:#181818;
+    background-color:#505050;
+}
+.bottom_top {
+    margin-top: 70px;
+    height: 1px;
+    background-color:#f0ab8d;
+}
+.bottom_bottom {
+    height: 1px;
+    background-color:#f0ab8d;
 }
 .music_list {
     color: #f0ab8d;
