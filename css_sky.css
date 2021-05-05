@@ -70,7 +70,7 @@ body {
 .floating div:nth-child(7){ border:2px solid #A6A6A6; border-radius: 8px; padding: 3px;}
 .floating div:nth-child(8){ border:2px solid #A6A6A6; border-radius: 8px; padding: 3px;}
 
-.floating_main_1 {border:none; position: fixed; right : 50%; top: 200px; margin-right: -615px; text-align:center; width:70px;}
+.floating_main_1 {border:none; position: fixed; right : 50%; top: 160px; margin-right: -615px; text-align:center; width:70px;}
 .floating_main_1 div:nth-child(1){ border:2px; border-radius: 8px; padding: 3px;}
 .floating_main_1 div:nth-child(2){ border:2px; border-radius: 8px; padding: 3px;}
 .floating_main_1 div:nth-child(3){ border:2px; border-radius: 8px; padding: 3px;}
@@ -79,7 +79,7 @@ body {
 .floating_main_1 div:nth-child(6){ border:2px; border-radius: 8px; padding: 3px;}
 .floating_main_1 div:nth-child(7){ border:2px; border-radius: 8px; padding: 3px;}
 .floating_main_1 div:nth-child(8){ border:2px; border-radius: 8px; padding: 3px;}
-.floating_main_2 {border:none; position: fixed; right : 45%; top: 200px; margin-right: -615px; text-align:center; width:70px; }
+.floating_main_2 {border:none; position: fixed; right : 45%; top: 160px; margin-right: -615px; text-align:center; width:70px; }
 .floating_main_2 div:nth-child(2){ border:2px; border-radius: 8px; padding: 3px;}
 .floating_main_2 div:nth-child(3){ border:2px; border-radius: 8px; padding: 3px;}
 .floating_main_2 div:nth-child(4){ border:2px; border-radius: 8px; padding: 3px;}
