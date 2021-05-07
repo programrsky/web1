@@ -2,6 +2,7 @@
     <html>
         <head>
             <title>WEB1</title>
+            <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
             <meta charset="utf-8">
              <link rel="stylesheet" href="css_sky.css">
         </head>
@@ -49,13 +50,97 @@
                     </ol></td>
                 </tr>
             </table>
-            <div align="center" style="padding-top:10px" >
-                
-            </div>
-            <div align="center" style="padding-top:10px">
+            
+            <div align="center" style="padding-top:10px;">
                 <div class="music_list_outside" style="background-image: url('../img_sky/sub_back.png')">
-                    <a href="http://da.elim.kro.kr/" class="music_list" style="color: aqua;text-decoration: none;">Github 테스트서버 주소</a>
-                    <div style="height: 500px; color: #f0ab8d;">Fill in temporary cells</div>
+                    
+                    <div id="wrap">
+                        <table style="padding:10px;">
+                            <tr>
+                                <th class="modal-open">
+                                    <div>
+                                        <a href="javascript:openModal('modal1');"><img src="../img_sky/카트라이더.jpg" width="100%"></a>
+                                        <a href="javascript:openModal('modal1');" style="text-decoration: none; color: aqua;">카트라이더 영상 보기</a>
+                                    </div>
+                                </th> 
+                                <th class="modal-open">
+                                    <div>
+                                        <a href="javascript:openModal('modal2');"><img src="../img_sky/카트라이더.jpg" width="100%"></a>
+                                        <a href="javascript:openModal('modal2');" style="text-decoration: none; color: aqua;">카트라이더 영상 보기</a>
+                                    </div>
+                                </th>
+                                <th class="modal-open">
+                                    <div>
+                                        <a href="javascript:openModal('modal3');"><img src="../img_sky/카트라이더.jpg" width="100%"></a>
+                                        <a href="javascript:openModal('modal3');" style="text-decoration: none; color: aqua;">카트라이더 영상 보기</a>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="modal-open">
+                                    <div>
+                                        <a href="javascript:openModal('modal4');"><img src="../img_sky/카트라이더.jpg" width="100%"></a>
+                                        <a href="javascript:openModal('modal4');" style="text-decoration: none; color: aqua;">카트라이더 영상 보기</a>
+                                    </div>
+                                </th> 
+                                <th class="modal-open">
+                                    <div>
+                                        <a href="javascript:openModal('modal5');"><img src="../img_sky/카트라이더.jpg" width="100%"></a>
+                                        <a href="javascript:openModal('modal5');" style="text-decoration: none; color: aqua;">카트라이더 영상 보기</a>
+                                    </div>
+                                </th>
+                                <th class="modal-open">
+                                    <div>
+                                        <a href="javascript:openModal('modal6');"><img src="../img_sky/카트라이더.jpg" width="100%"></a>
+                                        <a href="javascript:openModal('modal6');" style="text-decoration: none; color: aqua;">카트라이더 영상 보기</a>
+                                    </div>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="modal"></div>
+                    <div class="modal-con modal1">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목</p>
+                        <div class="con">
+                        dsaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+                    </div>
+                    <div class="modal-con modal2">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                        asdLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+                    </div>
+                    <div class="modal-con modal3">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                        asdLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+                    </div>
+                    <div class="modal-con modal4">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                        asdLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+                    </div>
+                    <div class="modal-con modal5">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                        asdLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+                    </div>
+                    <div class="modal-con modal6">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                        asdLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+                    </div>
                 </div>
             </div>
             
@@ -77,5 +162,17 @@
                     Facebook / <a href="https://www.facebook.com/gumehos2"  class="bottom_font_li">gumehos2</a>
                 </p>
             </div>
+            <script>
+                function openModal(modalname){
+                document.get
+                $("#modal").fadeIn(300);
+                $("."+modalname).fadeIn(300);
+                }
+
+                $("#modal, .close").on('click',function(){
+                $("#modal").fadeOut(300);
+                $(".modal-con").fadeOut(300);
+                });
+            </script>
         </body>
     </html>
