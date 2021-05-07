@@ -67,14 +67,6 @@ body {
     width: 100%;
     background-image: url(img_sky/구글_아이콘.png);
 }
-.floating {background-color: rgba( 38, 38, 38, 0.5 ); border:2px solid #262626; position: fixed; right : 43%; top: 200px; margin-right: -615px; text-align:center; width:200px;}
-.floating div:nth-child(2){ border:2px solid #A6A6A6; border-radius: 8px; padding: 3px;}
-.floating div:nth-child(3){ border:2px solid #A6A6A6; border-radius: 8px; padding: 3px;}
-.floating div:nth-child(4){ border:2px solid #A6A6A6; border-radius: 8px; padding: 3px;}
-.floating div:nth-child(5){ border:2px solid #A6A6A6; border-radius: 8px; padding: 3px;}
-.floating div:nth-child(6){ border:2px solid #A6A6A6; border-radius: 8px; padding: 3px;}
-.floating div:nth-child(7){ border:2px solid #A6A6A6; border-radius: 8px; padding: 3px;}
-.floating div:nth-child(8){ border:2px solid #A6A6A6; border-radius: 8px; padding: 3px;}
 
 .floating_main_1 {border:none; position: fixed; right : 50%; top: 160px; margin-right: -615px; text-align:center; width:70px;}
 .floating_main_1 div:nth-child(1){ border:2px; border-radius: 8px; padding: 3px;}
