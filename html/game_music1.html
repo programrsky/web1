@@ -2,6 +2,7 @@
     <html>
         <head>
             <title>WEB1</title>
+            <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
             <meta charset="utf-8">
              <link rel="stylesheet" href="css_sky.css">
         </head>
@@ -52,66 +53,712 @@
             <div align="center" style="padding-top:10px">
                 <div class="music_list_outside" style="background-image: url('../img_sky/sub_back.png')">
                     <P class="music_list" id="list_1">코딩할때 듣기 좋은 노래</P>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=YJhTVBKdmqk&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=cbuZfY2S2UQ&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=HT2rbv_-MOg&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=Xc1Le3CSdrM&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=cd9bCN5z7jw&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=iaXReFOr9YY&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div id="wrap">
+                        <table style="padding:10px;">
+                            <tr>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal1');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal1');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th> 
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal2');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal2');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal3');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal3');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal4');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal4');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th> 
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal5');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal5');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal6');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal6');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
                 <div class="music_list_outside" style="background-image: url('../img_sky/sub_back.png')">
                     <P class="music_list" id="list_2">Dawn Sesibility[새벽감성]</P>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=WfBYeZVzqp0&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=-3LugpXuG-g&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=rod11dE9JaA&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=OFvZO7ul41A&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=miLgg7Fc04k&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=6wJepYuiznU&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div id="wrap">
+                        <table style="padding:10px;">
+                            <tr>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal7');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal7');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th> 
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal8');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal8');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal9');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal9');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal10');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal10');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th> 
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal11');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal11');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal12');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal12');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
                 <div class="music_list_outside" style="background-image: url('../img_sky/sub_back.png')">
                     <P class="music_list" id="list_3">Relaxation music[기분전환]</P>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=KQnoZ2Fyrnw&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=_V8kpeOAnfY&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=hGfcGdT-Uz4&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=y48K0dxJEYA&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=fs0vfsOCmCk&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=F9Ex1ESEWN4&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div id="wrap">
+                        <table style="padding:10px;">
+                            <tr>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal13');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal13');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th> 
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal14');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal14');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal15');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal15');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal116');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal16');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th> 
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal17');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal17');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal18');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal18');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
                 <div class="music_list_outside" style="background-image: url('../img_sky/sub_back.png')">
                     <P class="music_list" id="list_4">Bad mood[ㅈ같은 기분]</P>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=Z7gxszIFKio&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=2HhvS8A0RFQ&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=Zs3CIgFET_Y&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=5WV5WFVtO0c&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=tywcwIaRReY&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=PR23s0ptMGI&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div id="wrap">
+                        <table style="padding:10px;">
+                            <tr>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal19');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal19');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th> 
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal20');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal20');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal21');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal21');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal22');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal22');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th> 
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal23');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal23');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal24');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal24');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
                 <div class="music_list_outside" style="background-image: url('../img_sky/sub_back.png')">
                     <P class="music_list" id="list_5">History Music[사극풍 노래]</P>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=fQQcU9FaV8s&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=cr82FMlUOmA&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=kMyx2KgMejU&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=9fsSRvS7Zb8&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=GPOpW4uoC_8&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=tnQy-JBC8hg&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div id="wrap">
+                        <table style="padding:10px;">
+                            <tr>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal25');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal25');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th> 
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal26');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal26');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal27');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal27');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal28');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal28');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th> 
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal29');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal29');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal30');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal30');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
                 <div class="music_list_outside" style="background-image: url('../img_sky/sub_back.png')">
                     <P class="music_list" id="list_6">Sleep Music[나는 잠이 자고싶어]</P>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=vXENF8VSBss&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=Woik_jaZxBA&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=lqfb4BwIpT4&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=YuvEewomXcY&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=2VwEHhrWOk4&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=E8xx1X0FN9Y&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div id="wrap">
+                        <table style="padding:10px;">
+                            <tr>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal31');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal31');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th> 
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal32');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal32');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal33');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal33');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal34');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal34');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th> 
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal35');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal35');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal36');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal36');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
                 <div class="music_list_outside" style="background-image: url('../img_sky/sub_back.png')">
                     <P class="music_list" id="list_7">Popular playlist[인기 리스트]</P>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=z5F48yvJVVE&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=PtuhgrWCHV4&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=Vt4PEGdqomY&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=p4aHC4xpv-U&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=QD8QqgMRi08&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=Aj9TdIAlYQ4&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div id="wrap">
+                        <table style="padding:10px;">
+                            <tr>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal37');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal37');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th> 
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal38');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal38');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal39');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal39');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal40');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal40');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th> 
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal41');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal41');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                                <th class="modal-open">
+                                    <a href="javascript:openModal('modal42');"><img src="../img_sky/유튜브_playlist_1.png" width="100%"></a>
+                                    <div style="text-align: left; padding:10px;">
+                                        <a href="javascript:openModal('modal42');" style="text-decoration: none; color: white;">[playlist] 내가 너무 좋아하지만 우울해서 이노래가 너무 생각나서 다시 틀어</a><br>
+                                        <a href="https://www.youtube.com/channel/UCTieDwi-vnwxBwJGruCWvTA" style="text-decoration: none; color: #AAAAAA;">Emotional storage</a><br>
+                                        <p style="color: #AAAAAA;">update : 2021.5.8</p>
+                                    </div>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="modal"></div>
+                    <div class="modal-con modal1">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">♫ Best NCS Gaming Music 2021 Mix ♫</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=YJhTVBKdmqk&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal2">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=cbuZfY2S2UQ&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal3">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=HT2rbv_-MOg&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal4">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=Xc1Le3CSdrM&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal5">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=cd9bCN5z7jw&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal6">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=iaXReFOr9YY&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal7">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">♫ Best NCS Gaming Music 2021 Mix ♫</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=WfBYeZVzqp0&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal8">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=-3LugpXuG-g&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal9">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=rod11dE9JaA&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal10">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=OFvZO7ul41A&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal11">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=miLgg7Fc04k&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal12">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=6wJepYuiznU&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal13">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">♫ Best NCS Gaming Music 2021 Mix ♫</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=KQnoZ2Fyrnw&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal14">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=_V8kpeOAnfY&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal15">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=hGfcGdT-Uz4&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal16">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=y48K0dxJEYA&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal17">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=fs0vfsOCmCk&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal18">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=F9Ex1ESEWN4&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal19">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">♫ Best NCS Gaming Music 2021 Mix ♫</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=Z7gxszIFKio&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal20">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=2HhvS8A0RFQ&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal21">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=Zs3CIgFET_Y&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal22">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=5WV5WFVtO0c&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal23">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=tywcwIaRReY&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal24">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=PR23s0ptMGI&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal25">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">♫ Best NCS Gaming Music 2021 Mix ♫</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=fQQcU9FaV8s&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal26">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=cr82FMlUOmA&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal27">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=kMyx2KgMejU&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal28">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=9fsSRvS7Zb8&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal29">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=GPOpW4uoC_8&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal30">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=tnQy-JBC8hg&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal31">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">♫ Best NCS Gaming Music 2021 Mix ♫</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=vXENF8VSBss&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal32">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=Woik_jaZxBA&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal33">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=lqfb4BwIpT4&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal34">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=YuvEewomXcY&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal35">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=2VwEHhrWOk4&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal36">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=E8xx1X0FN9Y&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal37">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=z5F48yvJVVE&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal38">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=PtuhgrWCHV4&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal39">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=Vt4PEGdqomY&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal40">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=p4aHC4xpv-U&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal41">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=QD8QqgMRi08&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+                    <div class="modal-con modal42">
+                        <a href="javascript:;" class="close">X</a>
+                        <p class="title">제목2</p>
+                        <div class="con">
+                            <iframe  width="950" height="534.375" src="https://www.youtube.com/embed/?playlist=Aj9TdIAlYQ4&amp;loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                        </div>
+                    </div>
+
                 </div>
                 
             </div>
@@ -144,5 +791,17 @@
                     Facebook / <a href="https://www.facebook.com/gumehos2"  class="bottom_font_li">gumehos2</a>
                 </p>
             </div>
+            <script>
+                function openModal(modalname){
+                document.get
+                $("#modal").fadeIn(300);
+                $("."+modalname).fadeIn(300);
+                }
+
+                $("#modal, .close").on('click',function(){
+                $("#modal").fadeOut(300);
+                $(".modal-con").fadeOut(300);
+                });
+            </script>
         </body>
     </html>
