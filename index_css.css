@@ -13,11 +13,11 @@
     background: #161616;
 }
 @font-face {
-    src : url("../Lovelyn Free Personal Use.otf");
+    src : url("Lovelyn Free Personal Use.otf");
     font-family: "jua"
 }
 @font-face {
-    src : url("../SDMiSaeng.ttf");
+    src : url("SDMiSaeng.ttf");
     font-family: "sdm"
 }
 .font_1 {
@@ -40,7 +40,7 @@
 }
 .main {
     width: 1000px;
-    background-image: url('../img_sky/main_opacity_99png.png');
+    background-image: url('img_sky/main_opacity_99png.png');
     padding: 0px;
     margin: auto;
     margin-top: 15px;
@@ -55,7 +55,7 @@
     text-decoration:none; 
 }
 body {
-    background-image: url('../img_sky/back배경.jpg');
+    background-image: url('img_sky/back배경.jpg');
     background-size: 100%;
     background-attachment: fixed;
     padding: auto;
@@ -65,7 +65,7 @@ body {
 }
 .co:hover {
     width: 100%;
-    background-image: url(../img_sky/구글_아이콘.png);
+    background-image: url(img_sky/구글_아이콘.png);
 }
 .floating {background-color: rgba( 38, 38, 38, 0.5 ); border:2px solid #262626; position: fixed; right : 43%; top: 200px; margin-right: -615px; text-align:center; width:200px;}
 .floating div:nth-child(2){ border:2px solid #A6A6A6; border-radius: 8px; padding: 3px;}
