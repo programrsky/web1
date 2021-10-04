@@ -12,21 +12,29 @@ body {
 }
 .main_top {
     width: 97%;
+    height: 100px;
     background-color: rgb(255, 255, 255);
-    padding-top: 20px;
-    padding-bottom: 20px;
     padding-left: 3%;
     margin: auto;
     margin-top: 0px;
     margin-bottom: 0px;
     color: black;
 }
+.main_top_1 {
+    float: left;
+    width: 65%;
+}
+.main_top_2 {
+    float: right;
+    width: 13%;
+    padding-top: 30px;
+}
 .main_center {
-    width: 95%;
+    width: 90%;
     background-color: rgba(49, 50, 53, 0.473);
     padding-top: 250px;
     padding-bottom: 70px;
-    padding-left: 5%;
+    padding-left: 10%;
     margin: auto;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -34,45 +42,47 @@ body {
     font-weight: 500;
 }
 .main_bottom {
-    width: 90%;
+    width: 80%;
     background-color: rgb(255, 255, 255);
     padding-top: 100px;
     padding-bottom: 700px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
     margin: auto;
     margin-top: 0px;
     margin-bottom: 0px;
     color: rgb(41, 41, 41);
     font-weight: 500;
 }
-.main_bottom_1{
-    display: inline-block;
-    background-color: aqua;
+.main_bottom_1 {
+    float: left;
     width: 65%;
     
 }
-.main_bottom_2{
-    display: inline-block;
-    background-color: #f0ab8d;
+.main_bottom_2 {
     float: right;
     width: 35%;
 }
-
-.default_font{
+.default_font {
     font-size: 70px;
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: 500;
 }
-.title_text_font{
+.top_instagram_font {
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.title_text_font {
     font-size: 30px;
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: 500;
     margin-bottom: 20px;
 }
-.main_text_font{
+.main_text_font {
     font-size: 20px;
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -124,7 +134,7 @@ body {
     overflow:auto;
 }
 .header{
-    background: #ECDFBF;
+    background: #ecdfbf;
     overflow: hidden;
     padding: 20px;
     text-align: center;
