@@ -13,7 +13,7 @@
 
             var value, name, item, i;
 
-            value = document.getElementById("value").value.toUpperCase();
+            value = document.getElementById("value").value.toUpperCase();          
             item = document.getElementsByClassName("item");
 
             for(i=0;i<item.length;i++){
@@ -23,7 +23,7 @@
                 }else{
                 item[i].style.display = "none";
                 }
-            }   
+            }
         }
     </script>
 
@@ -32,7 +32,6 @@
     <div class="main_top">
         <a href="../index.html"><img src="../타이틀아이콘.png" width="50"></a>
         <a href="../index.html" class="default_font" >𝓟𝓻𝓸𝓰𝓻𝓪𝓶 𝓢𝓴𝔂 𝓦𝓮𝓫 𝓢𝓮𝓻𝓿𝓮𝓻</a>
-        <p style="display: inline;">asd</p>
     </div>
     <div class="main_center">
         <div style="margin-bottom: 10px;">Study - Java</div>
@@ -41,31 +40,49 @@
         <div style="margin-top: 5px;">Update ; 2021-10-03</div>
     </div>
     <div class="main_bottom">
-        <div style="margin-bottom: 60px;">
-            <div class="title_text_font">Java 기본설명</div>
-            <div class="main_text_font">
-                안녕하세요 저는 본문 설명 씨부리고 있는 이하늘이라고 합니다<br>
-                본문 글 연습을위해 하무말이나적고있는데 존나 병신같은 짓이네요<br>
-                그냥 네이버 검색해서 아무 본문이나 가져와도되지만 그냥 이짓거리좀<br>
-                하고있습니다.
+        <div class="main_bottom_1">
+            <div style="margin-bottom: 60px;">
+                <div class="title_text_font">Java 기본설명</div>
+                <div class="main_text_font">
+                    안녕하세요 저는 본문 설명 씨부리고 있는 이하늘이라고 합니다<br>
+                    본문 글 연습을위해 하무말이나적고있는데 존나 병신같은 짓이네요<br>
+                    그냥 네이버 검색해서 아무 본문이나 가져와도되지만 그냥 이짓거리좀<br>
+                    하고있습니다.
+                </div>
+            </div>
+            <div style="margin-bottom: 60px;">
+                <div class="title_text_font">Java 기본설명</div>
+                <div class="main_text_font">
+                    안녕하세요 저는 본문 설명 씨부리고 있는 이하늘이라고 합니다<br>
+                    본문 글 연습을위해 하무말이나적고있는데 존나 병신같은 짓이네요<br>
+                    그냥 네이버 검색해서 아무 본문이나 가져와도되지만 그냥 이짓거리좀<br>
+                    하고있습니다.
+                </div>
+            </div>
+            <div style="margin-bottom: 60px;">
+                <div class="title_text_font">Java 기본설명</div>
+                <div class="main_text_font">
+                    안녕하세요 저는 본문 설명 씨부리고 있는 이하늘이라고 합니다<br>
+                    본문 글 연습을위해 하무말이나적고있는데 존나 병신같은 짓이네요<br>
+                    그냥 네이버 검색해서 아무 본문이나 가져와도되지만 그냥 이짓거리좀<br>
+                    하고있습니다.
+                </div>
             </div>
         </div>
-        <div style="margin-bottom: 60px;">
-            <div class="title_text_font">Java 기본설명</div>
-            <div class="main_text_font">
-                안녕하세요 저는 본문 설명 씨부리고 있는 이하늘이라고 합니다<br>
-                본문 글 연습을위해 하무말이나적고있는데 존나 병신같은 짓이네요<br>
-                그냥 네이버 검색해서 아무 본문이나 가져와도되지만 그냥 이짓거리좀<br>
-                하고있습니다.
-            </div>
-        </div>
-        <div style="margin-bottom: 60px;">
-            <div class="title_text_font">Java 기본설명</div>
-            <div class="main_text_font">
-                안녕하세요 저는 본문 설명 씨부리고 있는 이하늘이라고 합니다<br>
-                본문 글 연습을위해 하무말이나적고있는데 존나 병신같은 짓이네요<br>
-                그냥 네이버 검색해서 아무 본문이나 가져와도되지만 그냥 이짓거리좀<br>
-                하고있습니다.
+        <div class="main_bottom_2">
+            <div class="searchbox">
+                <div class="header">
+                    <h1>Search</h1>
+                    <input onkeyup="filter()" type="text" id="value" placeholder="Type to Search">
+                </div>
+        
+                <div class="container">
+                
+                    <div class="item">
+                        <span class="icon">J</span>
+                        <span class="name">Java</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

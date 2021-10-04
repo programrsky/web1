@@ -7,26 +7,26 @@ body {
     background-size: 100%;
     background-attachment: fixed;
     padding: auto;
+    width: 100%;
+    font-family: "Montserrat";
 }
 .main_top {
-    width: 100%;
+    width: 97%;
     background-color: rgb(255, 255, 255);
-    padding-right: 90%;
-    padding-left: 5%;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 3%;
     margin: auto;
     margin-top: 0px;
     margin-bottom: 0px;
     color: black;
 }
 .main_center {
-    width: 100%;
+    width: 95%;
     background-color: rgba(49, 50, 53, 0.473);
-    padding-right: 90%;
-    padding-left: 10%;
     padding-top: 250px;
     padding-bottom: 70px;
+    padding-left: 5%;
     margin: auto;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -34,20 +34,33 @@ body {
     font-weight: 500;
 }
 .main_bottom {
-    width: 100%;
+    width: 90%;
     background-color: rgb(255, 255, 255);
-    padding-right: 90%;
-    padding-left: 10%;
     padding-top: 100px;
     padding-bottom: 700px;
+    padding-left: 5%;
+    padding-right: 5%;
     margin: auto;
     margin-top: 0px;
     margin-bottom: 0px;
     color: rgb(41, 41, 41);
     font-weight: 500;
 }
+.main_bottom_1{
+    display: inline-block;
+    background-color: aqua;
+    width: 65%;
+    
+}
+.main_bottom_2{
+    display: inline-block;
+    background-color: #f0ab8d;
+    float: right;
+    width: 35%;
+}
+
 .default_font{
-    font-size: 50px;
+    font-size: 70px;
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: 500;
@@ -67,6 +80,8 @@ body {
 }
 
 
+
+/*하단 배너 css*/
 .bottom_1 {
     text-align: center;
     padding-top: 25px;
@@ -101,15 +116,12 @@ body {
 }
 
 
-
-body{
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat";
-}
+/*검색창 css*/
 .searchbox{
     width: 90%;
     margin: 10px auto;
+    height: 500px;
+    overflow:auto;
 }
 .header{
     background: #ECDFBF;
