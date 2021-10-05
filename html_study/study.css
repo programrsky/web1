@@ -12,7 +12,7 @@ body {
 }
 .main_top {
     width: 97%;
-    height: 100px;
+    height: 70px;
     background-color: rgb(255, 255, 255);
     padding-left: 3%;
     margin: auto;
@@ -22,12 +22,17 @@ body {
 }
 .main_top_1 {
     float: left;
-    width: 65%;
+    width: 4%;
 }
 .main_top_2 {
+    float: left;
+    width: 64%;
+    padding-top: 5px;
+}
+.main_top_3 {
     float: right;
     width: 13%;
-    padding-top: 30px;
+    padding-top: 15px;
 }
 .main_center {
     width: 90%;
@@ -53,18 +58,18 @@ body {
     margin-bottom: 0px;
     color: rgb(41, 41, 41);
     font-weight: 500;
+    height: 120px;
 }
 .main_bottom_1 {
     float: left;
     width: 65%;
-    
 }
 .main_bottom_2 {
     float: right;
     width: 35%;
 }
 .default_font {
-    font-size: 70px;
+    font-size: 40px;
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: 500;
