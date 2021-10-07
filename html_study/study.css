@@ -10,6 +10,16 @@ body {
     width: 100%;
     font-family: "Montserrat";
 }
+.benner{
+    width: 97%;
+    height: 30px;
+    background-color: rgb(226, 60, 60);
+    padding-left: 3%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: black;
+}
 .main_top {
     width: 97%;
     height: 70px;
@@ -47,12 +57,12 @@ body {
     font-weight: 500;
 }
 .main_bottom {
-    width: 80%;
+    width: 85%;
     background-color: rgb(255, 255, 255);
     padding-top: 100px;
     padding-bottom: 700px;
     padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 5%;
     margin: auto;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -62,11 +72,11 @@ body {
 }
 .main_bottom_1 {
     float: left;
-    width: 65%;
+    width: 75%;
 }
 .main_bottom_2 {
     float: right;
-    width: 35%;
+    width: 25%;
 }
 .default_font {
     font-size: 40px;
