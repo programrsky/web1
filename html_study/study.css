@@ -10,6 +10,16 @@ body {
     width: 100%;
     font-family: "Montserrat";
 }
+.banner {
+    width: 97%;
+    height: 30px;
+    background-color: rgb(248, 114, 114);
+    padding-left: 3%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: black;
+}
 .main_top {
     width: 97%;
     height: 70px;
