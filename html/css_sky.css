@@ -10,7 +10,7 @@
     width: 1000px;
     height: 150px;
     margin: auto;
-    background: #161616;
+    background: #161616a8
 }
 @font-face {
     src : url("../Lovelyn Free Personal Use.otf");
@@ -40,7 +40,6 @@
 }
 .main {
     width: 1000px;
-    background-image: url('../img_sky/main_opacity_99png.png');
     padding: 0px;
     margin: auto;
     margin-top: 15px;
@@ -127,8 +126,8 @@ body {
     width:100%; height:100%;
     top:0; left:0; 
     background:rgba(0,0,0,0.3);
-  }
-  .modal-con{ 
+}
+.modal-con{ 
     display:none;
     position:fixed;
     top:50%; left:50%;
@@ -136,18 +135,18 @@ body {
     max-width: 70%;
     min-height: 30%;
     background:rgb(58, 58, 58);
-  }
-  .modal-con .title{ 
+}
+.modal-con .title{ 
     font-size:20px; 
     padding: 20px; 
     color: #fff;
     background : rgb(43, 43, 43);
-  }
-  .modal-con .con{ 
+}
+.modal-con .con{ 
     font-size:15px; line-height:1.3;
     padding: 30px
-  }
-  .modal-con .close{ 
+}
+.modal-con .close{ 
     display:block;
     position:absolute;
     width:30px; height:30px;
@@ -157,10 +156,10 @@ body {
     text-decoration:none;
     color:#000; font-size:20px; font-weight: bold;
     right:10px; top:10px;
-  }
-  .modal-open {
-      width: 25%;
-      padding: 10px;
-  }
+}
+.modal-open {
+    width: 25%;
+    padding: 10px;
+}
 
 /*목록*/

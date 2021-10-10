@@ -10,7 +10,7 @@
     width: 1000px;
     height: 150px;
     margin: auto;
-    background: #161616;
+    background: #161616a8;
 }
 @font-face {
     src : url("Lovelyn Free Personal Use.otf");
@@ -40,7 +40,6 @@
 }
 .main {
     width: 1000px;
-    
     padding: 0px;
     margin: auto;
     margin-top: 15px;
